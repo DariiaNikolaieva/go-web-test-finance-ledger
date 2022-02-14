@@ -1,0 +1,31 @@
+.nav {
+    padding: 27px 19px 0 28px ;
+    border: 1px solid saddlebrown;
+    color: getColor('nav-text');
+}
+.nav__logo_link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.nav__logo {
+    fill: getColor('accent-text');
+    width: 39px;
+    height: 35px;
+}
+
+.nav__logo_name {
+    margin-left: 5.69px;
+    color: getColor('accent-text');
+    font-size: 35px;
+}
+
+.nav__logo_name_accent {
+    color: getColor('nav-text');
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+}
