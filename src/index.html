@@ -4,17 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-<!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <title>Finance Ledger</title>
   </head>
   <body>
-    <header>
-      <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH + "/00-header.html") %>
+    <header class="header">
+      <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH +
+      "/00-header.html") %>
+    </header>
     <main>
-      <section class="hero">
-        <!-- <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH + "/01-hero.html") %> -->
+      <section class="hero" id="hero">
+        <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH +
+        "/01-hero.html") %>
       </section>
       <section class="about">
         <!-- <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH + "/02-about.html") %> -->

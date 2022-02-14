@@ -4,7 +4,8 @@ $color: (
     'light-text': #E9E9E9,
     'accent-text': #28A745,
     'nav-text': #FFFFFF,
-    'placeholder-text': #808080
+    'placeholder-text': #808080,
+    'main-accent-bcg': #28A745,
 );
 
 @function getColor($key) {

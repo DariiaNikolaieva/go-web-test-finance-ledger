@@ -1,34 +1,52 @@
+.hero__bgimg {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 533px;
+  left: 0;
+  top: 0;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    url("../images/images_orig/images/home/showcase.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .nav {
-    padding: 23px 19px 0 20px;
-    color: getColor('nav-text');
+  padding: 23px 19px 0 20px;
+  color: getColor("nav-text");
 }
 .nav__logo_link {
-    display: flex;
-    align-items: center;
-    margin-left: 8px;
-    margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+  margin-bottom: 12px;
 }
 
 .nav__logo {
-    fill: getColor('accent-text');
-    width: 39px;
-    height: 35px;
+  fill: getColor("accent-text");
+  width: 39px;
+  height: 35px;
 }
 
 .nav__logo_name {
-    margin-left: 5.69px;
-    color: getColor('nav-text');
-    font-size: 32px;
-    line-height: 1.32;
+  margin-left: 5.69px;
+  color: getColor("nav-text");
+  font-size: 32px;
+  line-height: 1.32;
 }
 
 .nav__logo_name_accent {
-    color: getColor('accent-text');
+  color: getColor("accent-text");
 }
 
 .nav__list {
-    display: flex;
-    justify-content: space-between;
-    font-size: 16px;
-    line-height: 1.6;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 1.6;
 }
