@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/2d547a4a7d.js" crossorigin="anonymous"></script>
     <title>Finance Ledger</title>
   </head>
   <body>
@@ -22,8 +23,8 @@
         <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH +
         "/01-hero.html") %>
       </section>
-      <section class="about">
-        <!-- <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH + "/02-about.html") %> -->
+      <section class="about" id="about">
+        <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH + "/02-about.html") %>
       </section>
       <section class="cases">
         <!-- <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH + "/03-cases.html") %> -->

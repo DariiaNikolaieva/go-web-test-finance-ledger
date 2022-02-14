@@ -1,0 +1,44 @@
+.about {
+    padding-top: 30px;
+}
+
+.about {
+    margin: 0 auto;
+}
+
+.about__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__item {
+    width: 220px;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.fa-circle {
+    color: getColor('accent-text');
+}
+
+.fa-book-open-reader {
+    color: getColor('nav-text');
+}
+
+.about__item_icon  {
+    margin-bottom: 11px;
+}
+
+.about__item_title {
+    margin-bottom: 15px;
+    font-weight: normal;
+font-size: 18px;
+line-height: 1.66;
+}
+
+.about__item_text {
+    font-weight: normal;
+font-size: 16px;
+line-height: 1.6;
+}
