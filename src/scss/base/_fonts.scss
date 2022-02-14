@@ -9,3 +9,23 @@
   url("../fonts/DINPro-Regular.ttf") format("truetype");
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-size: 400;
+  src: url("../fonts/OpenSans-Regular.eot") format("eot"),
+  url("../fonts/OpenSans-Regular.ttf") format("truetype"),
+  url("../fonts/OpenSans-Regular.woff") format("woff"),
+  url("../fonts/OpenSans-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-size: 300;
+  src: url("../fonts/OpenSans-Light.eot") format("eot"),
+  url("../fonts/OpenSans-Light.ttf") format("truetype"),
+  url("../fonts/OpenSans-Light.woff") format("woff"),
+  url("../fonts/OpenSans-Light.woff2") format("woff2");
+}
