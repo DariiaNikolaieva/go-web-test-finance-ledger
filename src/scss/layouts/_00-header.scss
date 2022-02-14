@@ -1,11 +1,11 @@
 .nav {
-    padding: 27px 19px 0 28px ;
-    border: 1px solid saddlebrown;
+    padding: 23px 19px 0 20px;
     color: getColor('nav-text');
 }
 .nav__logo_link {
     display: flex;
     align-items: center;
+    margin-left: 8px;
     margin-bottom: 12px;
 }
 
@@ -17,15 +17,18 @@
 
 .nav__logo_name {
     margin-left: 5.69px;
-    color: getColor('accent-text');
-    font-size: 35px;
+    color: getColor('nav-text');
+    font-size: 32px;
+    line-height: 1.32;
 }
 
 .nav__logo_name_accent {
-    color: getColor('nav-text');
+    color: getColor('accent-text');
 }
 
 .nav__list {
     display: flex;
     justify-content: space-between;
+    font-size: 16px;
+    line-height: 1.6;
 }
