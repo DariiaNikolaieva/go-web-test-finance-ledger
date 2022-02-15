@@ -8,6 +8,7 @@ $color: (
     // background colors
     'main-bcg': #FFFFFF,
     'main-accent-bcg': #28A745,
+    'add-accent-bcg': #0284D0,
 );
 
 @function getColor($key) {

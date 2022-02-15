@@ -1,0 +1,48 @@
+.blog {
+  color: getColor("white-text");
+  background-color: getColor("add-accent-bcg");
+}
+
+.blog__container {
+  padding: 30px;
+}
+
+.blog__img {
+  width: 100vw;
+  height: 220px;
+  object-fit: cover;
+}
+
+.blog__date {
+  margin-bottom: 5px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.66;
+}
+
+.blog__title {
+  margin-bottom: 25px;
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+}
+
+.blog__text {
+  margin-bottom: 14px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.blog__btn {
+  width: 184px;
+  height: 47px;
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.6;
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
