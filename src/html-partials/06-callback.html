@@ -1,9 +1,19 @@
 <div class="callback__tablet_container">
-  <img
-    class="callback__img"
-    src="images/content/home/contact.jpg"
-    alt="A man looking at his laptop with smartphone in his hand"
-  />
+  <picture>
+    <source
+      srcset="
+      images/content/home/contact.webp    1x,
+      images/content/home/contact@2x.webp 2x,
+      images/content/home/contact@2x.jpg  2x
+      "
+      type="image/webp"
+    />
+    <img
+      class="callback__img"
+      src="images/content/home/contact.jpg"
+      alt="A man looking at his laptop with smartphone in his hand"
+    />
+  </picture>
   <div class="container callback__tablet_container">
     <div class="callback__container">
       <h2 class="callback__title">Request Callback</h2>

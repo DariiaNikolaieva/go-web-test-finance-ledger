@@ -51,6 +51,16 @@
   }
 
   .hero__btn {
+    margin-bottom: 412px;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .hero__text {
+    margin-bottom: 29px;
+  }
+
+  .hero__btn {
     margin-bottom: 284px;
   }
 

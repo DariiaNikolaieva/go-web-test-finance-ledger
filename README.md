@@ -7,5 +7,4 @@
 * ***sprite svg creation*** (20 minutes)
 * ***mobiles styles*** (4 hours 26 minutes)
 * ***tablet styles*** (2 hours 17 minutes)
-
-текст в about, cases
+* ***desktop styles*** (1 hours 33 minutes)

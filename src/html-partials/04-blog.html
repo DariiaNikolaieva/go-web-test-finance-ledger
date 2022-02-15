@@ -1,9 +1,19 @@
 <div class="blog__tablet_container">
-  <img
-    class="blog__img"
-    src="images/content/home/blog.jpg"
-    alt="Working place"
-  />
+  <picture>
+    <source
+      srcset="
+        images/content/home/blog.webp    1x,
+        images/content/home/blog@2x.webp 2x,
+        images/content/home/blog@2x.jpg  2x
+      "
+      type="image/webp"
+    />
+    <img
+      class="blog__img"
+      src="images/content/home/blog.jpg"
+      alt="Team all together"
+    />
+  </picture>
   <div class="container blog__tablet_container">
     <div class="blog__container">
       <p class="blog__date">April 16 2020</p>

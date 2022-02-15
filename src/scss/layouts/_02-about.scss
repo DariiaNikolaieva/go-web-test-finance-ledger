@@ -28,6 +28,23 @@
   color: getColor("white-text");
 }
 
+.about__item_icon_circle {
+margin: 0 auto 11px auto;
+  width: 64px;
+  height: 64px;
+  background-color: getColor("accent-text");
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__item_icon_svg {
+  width: 32px;
+  height: 32px;
+  fill: getColor("white-text");
+}
+
 .about__item_icon {
   margin-bottom: 11px;
 }
@@ -200,7 +217,7 @@
   }
 
   .about__item_text {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.56;
   }
 
