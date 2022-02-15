@@ -8,3 +8,4 @@
 * ***mobiles styles*** (4 hours 26 minutes)
 * ***tablet styles*** (2 hours 17 minutes)
 * ***desktop styles*** (1 hours 33 minutes)
+* ***images retina-support addition*** (23 minutes)

@@ -32,10 +32,18 @@
   color: getColor("white-text");
 }
 .nav__logo_link {
+  cursor: pointer;
   display: flex;
   align-items: center;
   margin-left: 8px;
   margin-bottom: 12px;
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav__logo_link:hover,
+.nav__logo_link:focus {
+  transform: scale(1.1);
+  filter: brightness(130%);
 }
 
 .nav__logo {
@@ -60,6 +68,15 @@
   justify-content: space-between;
   font-size: 16px;
   line-height: 1.6;
+}
+
+.nav__item {
+  cursor: pointer;
+}
+
+.nav__item:hover,
+.nav__item:focus {
+  border-bottom: 3px solid rgba(40, 167, 69, 0.5);
 }
 
 @media screen and (min-width: 768px) {

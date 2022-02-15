@@ -47,6 +47,7 @@
 }
 
 .callback__btn {
+  cursor: pointer;
   width: 260px;
   height: 42px;
   font-family: inherit;
@@ -57,6 +58,12 @@
   background-color: getColor("main-accent-bcg");
   border-color: transparent;
   border-radius: 5px;
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.callback__btn:hover,
+.callback__btn:focus {
+  opacity: 0.9;
 }
 
 @media screen and (min-width: 768px) {

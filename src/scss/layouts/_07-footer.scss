@@ -17,6 +17,19 @@
     font-size: 35px;
 }
 
+.footer__social_item {
+    cursor: pointer;
+}
+
+.fa-brands {
+    transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__social_item:hover .fa-brands,
+.footer__social_item:focus .fa-brands {
+    color: getColor('accent-text');
+}
+
 .footer__copyright {
     font-weight: normal;
 font-size: 16px;
