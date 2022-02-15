@@ -1,10 +1,9 @@
 .hero {
-    position: relative;
+  position: relative;
   color: getColor("light-text");
   margin: 0 auto;
   text-align: center;
 }
-
 
 .hero__title {
   padding-top: 44px;
@@ -15,24 +14,43 @@
 }
 
 .hero__text {
+  margin-bottom: 27px;
   font-weight: normal;
   font-size: 22px;
   line-height: 1.67;
 }
 
 .hero__btn {
-    font-family: inherit;
-    color: getColor('white-text');
-    font-size: 16px;
-    margin-top: 27px;
-    margin-bottom: 95px;
-    width: 156px;
-    height: 45px;
-    border: 0;
-    border-radius: 5px;
-    background-color: getColor('main-accent-bcg');
+  font-family: inherit;
+  padding-left: 26px;
+  padding-right: 30px;
+  color: getColor("white-text");
+  font-size: 16px;
+  margin-bottom: 95px;
+  width: 156px;
+  height: 45px;
+  border: 0;
+  border-radius: 5px;
+  background-color: getColor("main-accent-bcg");
 }
 
 .fa-solid.fa-angle-right {
-  margin-right: 5px;
+  margin-right: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__title {
+    padding-top: 341px;
+    margin-bottom: 25px;
+    font-size: 55px;
+    line-height: 1.2;
+  }
+
+  .hero__text {
+    margin-bottom: 29px;
+  }
+
+  .hero__btn {
+    margin-bottom: 412px;
+  }
 }
