@@ -51,7 +51,6 @@
   .blog__tablet_container {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-end;
     height: 468px;
   }
 
@@ -67,6 +66,7 @@
 
   .blog__container {
     padding-top: 29px;
+    padding-right: 39px;
   }
 
   .blog__date {
