@@ -63,5 +63,32 @@
     margin-bottom: 0;
     width: 172px;
   }
+}
 
+@media screen and (min-width: 1360px) {
+  .cases__container {
+    padding: 46px 28px 48px 28px;
+  }
+
+  .cases__title {
+    font-size: 18px;
+    line-height: 1.65;
+  } 
+
+.cases__text {
+  margin-bottom: 34px;
+}
+
+.cases__text_description {
+  margin-bottom: 39px;
+  font-size: 14px;
+}
+
+.cases__list_img {
+  height: 435px;
+}
+
+.cases__item {
+  width: 320px;
+}
 }
