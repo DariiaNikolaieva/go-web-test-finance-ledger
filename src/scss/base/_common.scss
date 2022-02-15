@@ -16,3 +16,9 @@ html {
         width: 768px;
     }
 }
+
+@media screen and (min-width: 1360px) {
+    .container {
+        width: 1360px;
+    }
+}

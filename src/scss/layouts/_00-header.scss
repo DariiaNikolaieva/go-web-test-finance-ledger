@@ -82,3 +82,17 @@
     margin-right: 18px;
   }
 }
+
+@media screen and (min-width: 1360px) {
+  .hero__bgimg {
+    height: 768px;
+  }
+
+  .nav {
+    padding: 13px 50px 0 42px;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-right: 38px;
+  }
+}

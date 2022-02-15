@@ -5,5 +5,6 @@
 * ***SASS structure creation*** (5 minutes)
 * ***HTML markup*** (1 hour 2 minutes)
 * ***sprite svg creation*** (20 minutes)
-* ***styles mobile-first*** (4 hours 26 minutes)
+* ***mobiles styles*** (4 hours 26 minutes)
+* ***tablet styles*** (2 hours 17 minutes)
 
