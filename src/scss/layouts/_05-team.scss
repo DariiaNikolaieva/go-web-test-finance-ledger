@@ -89,3 +89,23 @@
     line-height: 1.56;
   }
 }
+
+@media screen and (min-width: 1360px) {
+  .team__container {
+    padding-top: 49px;
+  }
+
+  .team__title {
+    font-size: 16px;
+  }
+
+  .team__text_description {
+    margin-bottom: 45px;
+    font-size: 14px;
+  }
+
+  .team__position {
+    font-size: 14px;
+    line-height: 1.56;
+  }
+}
