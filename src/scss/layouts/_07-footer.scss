@@ -1,0 +1,23 @@
+.footer {
+    color: getColor('white-text');
+    background-color: getColor('dark-bcg');
+}
+
+.footer__container {
+    padding: 16px 30px 20px 34px;
+}
+
+.footer__social_list {
+    margin: 0 auto;
+    margin-bottom: 6px;
+    width: 216px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 35px;
+}
+
+.footer__copyright {
+    font-weight: normal;
+font-size: 16px;
+line-height: 1.6;
+}

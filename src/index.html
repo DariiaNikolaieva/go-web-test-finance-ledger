@@ -10,7 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
       rel="stylesheet"
     />
-    <script src="https://kit.fontawesome.com/2d547a4a7d.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/2d547a4a7d.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Finance Ledger</title>
   </head>
   <body>
@@ -24,23 +27,55 @@
         "/01-hero.html") %>
       </section>
       <section class="about" id="about">
-        <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH + "/02-about.html") %>
+        <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH +
+        "/02-about.html") %>
       </section>
       <section class="cases">
-        <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH + "/03-cases.html") %>
+        <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH +
+        "/03-cases.html") %>
       </section>
       <section class="blog">
-        <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH + "/04-blog.html") %>
+        <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH +
+        "/04-blog.html") %>
       </section>
       <section class="team">
-        <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH + "/05-team.html") %>
+        <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH +
+        "/05-team.html") %>
       </section>
       <section class="callback">
-        <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH + "/06-callback.html") %>
+        <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH +
+        "/06-callback.html") %>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <!-- <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH + "/07-footer.html") %> -->
+      <div class="container">
+        <div class="footer__container">
+          <ul class="footer__social_list">
+            <li class="footer__social_item">
+              <a href="https://www.facebook.com/" class="footer__social_link"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+            <li class="footer__social_item">
+              <a href="https://twitter.com/" class="footer__social_link"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li class="footer__social_item">
+              <a href="https://www.youtube.com/" class="footer__social_link"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </li>
+            <li class="footer__social_item">
+              <a href="https://www.linkedin.com/" class="footer__social_link"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </li>
+          </ul>
+          <p class="footer__copyright">Copyright © 2021 - FinanceLedger</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

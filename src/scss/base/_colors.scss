@@ -10,6 +10,7 @@ $color: (
     'add-bcg': #F4F4F4,
     'main-accent-bcg': #28A745,
     'add-accent-bcg': #0284D0,
+    'dark-bcg': #333333,
 );
 
 @function getColor($key) {
