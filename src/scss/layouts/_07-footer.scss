@@ -1,6 +1,7 @@
 .footer {
     color: getColor('white-text');
     background-color: getColor('dark-bcg');
+    text-align: center;
 }
 
 .footer__container {
@@ -20,4 +21,11 @@
     font-weight: normal;
 font-size: 16px;
 line-height: 1.6;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__copyright {
+        font-size: 18px;
+        line-height: 1.56;
+    }
 }
