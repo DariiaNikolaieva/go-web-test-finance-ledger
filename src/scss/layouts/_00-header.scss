@@ -10,7 +10,7 @@
       rgba(0, 0, 0, 0.4) 0%,
       rgba(0, 0, 0, 0.4) 100%
     ),
-    url("../images/images_orig/images/home/showcase.jpg");
+    url("../images/content/home/showcase.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -18,7 +18,7 @@
 
 .nav {
   padding: 23px 19px 0 20px;
-  color: getColor("nav-text");
+  color: getColor('white-text');
 }
 .nav__logo_link {
   display: flex;
@@ -35,7 +35,7 @@
 
 .nav__logo_name {
   margin-left: 5.69px;
-  color: getColor("nav-text");
+  color: getColor('white-text');
   font-size: 32px;
   line-height: 1.32;
 }
