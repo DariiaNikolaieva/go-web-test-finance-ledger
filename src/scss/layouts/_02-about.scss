@@ -1,7 +1,6 @@
 .about {
   padding-top: 30px;
   margin: 0 auto;
-  // position: relative;
 }
 
 .about__list {
@@ -24,7 +23,7 @@
   color: getColor("accent-text");
 }
 
-.fa-book-open-reader {
+.fa-book-open-reader, .fa-pencil {
   color: getColor("white-text");
 }
 
