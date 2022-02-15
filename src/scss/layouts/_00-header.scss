@@ -18,7 +18,7 @@
 
 .nav {
   padding: 23px 19px 0 20px;
-  color: getColor('white-text');
+  color: getColor("white-text");
 }
 .nav__logo_link {
   display: flex;
@@ -35,7 +35,7 @@
 
 .nav__logo_name {
   margin-left: 5.69px;
-  color: getColor('white-text');
+  color: getColor("white-text");
   font-size: 32px;
   line-height: 1.32;
 }
@@ -49,4 +49,36 @@
   justify-content: space-between;
   font-size: 16px;
   line-height: 1.6;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__bgimg {
+    height: 1024px;
+  }
+
+  .nav {
+    padding: 13px 40px 0 32px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav__logo_name {
+    margin-left: 9.69px;
+    font-size: 35px;
+    line-height: 1.21;
+  }
+
+  .nav__logo_name_accent {
+    margin-right: 8px;
+  }
+
+  .nav__list {
+    padding-top: 9px;
+    font-size: 18px;
+    line-height: 1.56;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-right: 18px;
+  }
 }
