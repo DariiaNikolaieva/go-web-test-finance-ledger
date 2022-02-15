@@ -1,0 +1,51 @@
+.team__container {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.team__title {
+  margin-bottom: 15px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.66;
+}
+
+.team__text {
+  margin-bottom: 35px;
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+}
+
+.team__text_description {
+  margin-bottom: 37px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.team__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
+}
+
+.team__item_img {
+  margin-bottom: 14px;
+  width: 100%;
+}
+
+.team__name {
+  margin-bottom: 11px;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 1.25;
+}
+
+.team__position {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.6;
+}
