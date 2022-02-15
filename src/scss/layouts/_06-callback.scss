@@ -91,3 +91,33 @@
     line-height: 1.39;
   }
 }
+
+@media screen and (min-width: 1360px) {
+  .callback__tablet_container {
+    height: 460px;
+  }
+
+  .container.callback__tablet_container {
+    width: 680px;
+  }
+
+  .callback__container {
+    padding: 78px 0 82px 30px;
+  }
+
+  .callback__input_field {
+    width: 620px;
+    font-size: 18px;
+    line-height: 1.28;
+  }
+
+  .callback__input_field:last-child {
+    margin-bottom: 60px;
+  }
+
+  .callback__btn {
+    width: 620px;
+    font-size: 18px;
+    line-height: 1.39;
+  }
+}
