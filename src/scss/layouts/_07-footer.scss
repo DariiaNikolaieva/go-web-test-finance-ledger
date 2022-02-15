@@ -29,3 +29,9 @@ line-height: 1.6;
         line-height: 1.56;
     }
 }
+
+@media screen and (min-width: 1360px) {
+    .footer__copyright {
+        font-size: 14px;
+    }
+}
