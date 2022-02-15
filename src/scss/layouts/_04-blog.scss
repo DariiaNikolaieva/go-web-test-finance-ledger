@@ -94,3 +94,31 @@
     color: inherit;
   }
 }
+
+@media screen and (min-width: 1360px) {
+  .blog__tablet_container {
+    height: 517px;
+  }
+
+  .container.blog__tablet_container {
+    width: 680px;
+  }
+
+  .blog__container {
+    width: 100%;
+    padding-top: 112px;
+    padding-left: 30px;
+  }
+
+  .blog__date {
+    margin-bottom: 5px;
+  }
+
+  .blog__text {
+    width: 100%;  
+    margin-bottom: 17px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.60;
+  }
+}
