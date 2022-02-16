@@ -2,7 +2,6 @@
   "author": "Dariia Nikolaieva <nikolaieva.dariya@gmail.com>",
   "name": "go-web-test-finance-ledger",
   "description": "",
-  "homepage": "",
   "browserslist": [
     "last 2 versions",
     "> 5%"
@@ -59,7 +58,9 @@
     "prod": "webpack --config configuration/webpack.prod.config.js --mode=production",
     "lint:sass": "sass-lint -v -q",
     "lint:js": "eslint --ext .js src/js/",
-    "stats": "webpack --config configuration/webpack.prod.config.js --mode=production --json > dist/stats.json && webpack-bundle-analyzer dist/stats.json"
+    "stats": "webpack --config configuration/webpack.prod.config.js --mode=production --json > dist/stats.json && webpack-bundle-analyzer dist/stats.json",
+    "predeploy": "npm run prod",
+    "deploy": "netlify deploy -p"
   },
   "target": "web",
   "dependencies": {

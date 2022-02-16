@@ -14,6 +14,8 @@
 * ***header sticky*** (30 minutes)
 * ***smooth scroll*** (1 hour 5 minutes)
 * ***validate warning*** (13 minutes)
+* ***netlify build + form*** (16 minutes)
+* ***validate warning fix*** (42 minutes)
 
 Что не удалось:
 - найти все иконки в шрифте FontAwesome, поэтому иконка логотипа и 2 иконки из секции About свёрстаны, как svg;

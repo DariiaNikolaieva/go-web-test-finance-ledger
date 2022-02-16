@@ -1,13 +1,16 @@
-const submitBtn = document.querySelector('.callback__btn');
+const inputRequired = document.querySelector(".email");
+const submitBtn = document.querySelector(".callback__btn");
+const warning = document.querySelector(".callback__warning");
 
-submitBtn.addEventListener('click', validateInput);
+submitBtn.addEventListener("click", validateForm);
+inputRequired.addEventListener("input", validateForm);
 
-function validateInput() {
-    const inputRequired = document.querySelector('.email');
-    const warning = document.querySelector('.callback__warning');
-    if(inputRequired.value === '') {
-        warning.style.display = 'flex';
-    } else {
-        warning.style.display = 'none';
-    }
+function validateForm() {
+  if (inputRequired.value === "") {
+    warning.style.display = "flex";
+    submitBtn.disabled = true;
+  } else if (inputRequired.value !== "") {
+    warning.style.display = "none";
+    submitBtn.disabled = false;
+  }
 }
