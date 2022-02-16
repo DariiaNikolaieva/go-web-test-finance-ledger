@@ -5,4 +5,5 @@ import '../scss/app.scss';
 /* Demo JS */
 import './demo.js';
 import './header-scroll';
+import './smooth-scroll';
 import './lightbox-plus-jquery';
