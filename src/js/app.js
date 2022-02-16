@@ -4,4 +4,5 @@ import '../scss/app.scss';
 
 /* Demo JS */
 import './demo.js';
+import './header-scroll';
 import './lightbox-plus-jquery';

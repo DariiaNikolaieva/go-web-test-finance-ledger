@@ -1,5 +1,34 @@
+.hero__bgimg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 533px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    url("../images/content/home/showcase.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 100%
+      ),
+      url("../images/content/home/showcase@2x.jpg");
+  }
+}
+
 .hero {
-  position: relative;
+  // position: relative;
   color: getColor("light-text");
   margin: 0 auto;
   text-align: center;
@@ -46,6 +75,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .hero__bgimg {
+    height: 1024px;
+  }
+
   .hero__title {
     padding-top: 341px;
     margin-bottom: 25px;
@@ -63,6 +96,10 @@
 }
 
 @media screen and (min-width: 1360px) {
+  .hero__bgimg {
+    height: 768px;
+  }
+  
   .hero__text {
     margin-bottom: 29px;
   }

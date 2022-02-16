@@ -11,3 +11,4 @@
 * ***images retina-support addition*** (23 minutes)
 * ***lightbox addition*** (38 minutes)
 * ***hover-effects addition*** (27 minutes)
+* ***header sticky*** (30 minutes)
