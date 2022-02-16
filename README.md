@@ -9,3 +9,5 @@
 * ***tablet styles*** (2 hours 17 minutes)
 * ***desktop styles*** (1 hours 33 minutes)
 * ***images retina-support addition*** (23 minutes)
+* ***lightbox addition*** (38 minutes)
+* ***hover-effects addition*** (27 minutes)
