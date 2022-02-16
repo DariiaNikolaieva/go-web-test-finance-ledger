@@ -19,6 +19,10 @@
   line-height: 1.26;
 }
 
+.callback__form {
+  position: relative;
+}
+
 .callback__input_field {
   padding-left: 5px;
   width: 260px;
@@ -38,15 +42,30 @@
   margin-bottom: 36px;
 }
 
-.callback__input_field:last-child {
-  margin-bottom: 53px;
-}
-
 .callback__input_field::placeholder {
   color: getColor("placeholder-text");
 }
 
+.callback__warning {
+  position: absolute;
+  top: 120px;
+  left: 5px;
+  display: none;
+  align-items: center;
+}
+
+.callback__input_warning {
+  color: #eb5757;
+  font-weight: normal;
+}
+
+.callback__input_warning_icon {
+  width: 16px;
+  height: 16px;
+}
+
 .callback__btn {
+  margin-top: 53px;
   cursor: pointer;
   width: 260px;
   height: 42px;
@@ -118,11 +137,8 @@
     line-height: 1.28;
   }
 
-  .callback__input_field:last-child {
-    margin-bottom: 60px;
-  }
-
   .callback__btn {
+    margin-top: 60px;
     width: 620px;
     font-size: 18px;
     line-height: 1.39;

@@ -2,9 +2,9 @@
   <picture>
     <source
       srcset="
-      images/content/home/contact.webp    1x,
-      images/content/home/contact@2x.webp 2x,
-      images/content/home/contact@2x.jpg  2x
+        images/content/home/contact.webp    1x,
+        images/content/home/contact@2x.webp 2x,
+        images/content/home/contact@2x.jpg  2x
       "
       type="image/webp"
     />
@@ -22,14 +22,22 @@
           class="callback__input_field"
           type="text"
           placeholder="Enter your name"
+          autocomplete="on"
         />
         <input
-          class="callback__input_field"
+          class="callback__input_field email"
           type="email"
           placeholder="Enter email*"
+          autocomplete="on"
         />
+        <div class="callback__warning">
+          <svg class="callback__input_warning_icon">
+            <use href="../images/content/symbol-defs.svg#warning"></use>
+          </svg>
+          <p class="callback__input_warning">This is a required field</p>
+        </div>
       </form>
-      <button class="callback__btn">Send</button>
+      <button type="submit" class="callback__btn">Send</button>
     </div>
   </div>
 </div>

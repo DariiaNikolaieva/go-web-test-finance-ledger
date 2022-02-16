@@ -13,3 +13,4 @@
 * ***hover-effects addition*** (27 minutes)
 * ***header sticky*** (30 minutes)
 * ***smooth scroll*** (1 hour 5 minutes)
+* ***validate warning*** (13 minutes)
