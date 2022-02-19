@@ -1,5 +1,13 @@
 .benefits {
   padding: 30px 0;
+
+  @media screen and (min-width: $tablet) {
+    padding: 40px 0 47px 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 19px;
+  }
 }
 
 .benefits__list {
@@ -7,6 +15,16 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 25px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin: 0 36px;
+  }
 }
 
 .benefits__item {
@@ -23,10 +41,26 @@
   & i:nth-child(2) {
     color: getColor("white-text");
   }
+
+  @media screen and (min-width: $tablet) {
+    width: 185px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 362px;
+  }
 }
 
 .benefits__item_icon {
   margin-bottom: 11px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 15px;
+  }
 }
 
 .benefits__item_icon_circle {
@@ -38,13 +72,27 @@
   height: 64px;
   background-color: getColor("accent-text");
   border-radius: 50%;
+
+  @media screen and (min-width: $tablet) {
+    width: 67px;
+    height: 67px;
+  }
 }
 
 .benefits__item_icon_svg {
   fill: getColor("white-text");
+
+  @media screen and (min-width: $tablet) {
+    width: 35px;
+    height: 35px;
+  }
 }
 
 .benefits__item_title {
   margin-bottom: 15px;
   @include mobSectionBeforeTitle;
+
+  @media screen and (min-width: $tablet) {
+    @include tabSectionBeforeTitle;
+  }
 }
