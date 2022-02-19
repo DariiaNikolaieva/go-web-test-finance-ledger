@@ -1,6 +1,26 @@
-.nav {
+.header {
   padding-top: 20px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 11px;
+  }
+}
+
+.nav {
   color: getColor("white-text");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 20px;
+  }
 }
 
 .nav__logo_link {
@@ -14,6 +34,10 @@
   &:focus {
     transform: scale(1.1);
     filter: brightness(130%);
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
   }
 }
 
@@ -29,19 +53,35 @@
 
   & > span {
     color: getColor("accent-text");
+    margin-right: 6px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 9.69px;
+    font-size: 35px;
+    line-height: 1.21;
   }
 }
 
 .nav__list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-width: 260px;
+  margin: 0 -10px;
+
+  @media screen and (min-width: $tablet) {
+    margin: 0 8px 0 10px;
+        font-size: 18px;
+    line-height: 1.56;
+  }
 }
 
 .nav__item {
   cursor: pointer;
   position: relative;
+
+  &:not(:last-child) {
+    margin-right: 12px;
+  }
 
   &::after {
     content: "";
@@ -59,58 +99,33 @@ width: 260px;
   &:focus::after {
     width: 100%;
   }
+
+  @media screen and (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-right: 18px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    &:not(:last-child) {
+      margin-right: 38px;
+    }
+  }
 }
 
 .header__fixed {
-  background-color: rgba(0, 0, 0, 0.8);
-  top: 0;
   position: fixed;
+  top: 0;
   z-index: 10;
+  padding-bottom: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
   width: 100vw;
+
+  & ~ main {
+    padding-top: 103px;
+  
+    @media screen and (min-width: $tablet) {
+      padding-top: 68px;
+    }
+  }
 }
-
-.header__fixed ~ main {
-  padding-top: 103px;
-}
-
-// @media screen and (min-width: 768px) {
-//   .nav {
-//     padding: 13px 40px 0 32px;
-//     display: flex;
-//     justify-content: space-between;
-//   }
-
-//   .nav__logo_name {
-//     margin-left: 9.69px;
-//     font-size: 35px;
-//     line-height: 1.21;
-//   }
-
-//   .nav__logo_name_accent {
-//     margin-right: 8px;
-//   }
-
-//   .nav__list {
-//     padding-top: 9px;
-//     font-size: 18px;
-//     line-height: 1.56;
-//   }
-
-//   .nav__item:not(:last-child) {
-//     margin-right: 18px;
-//   }
-
-//   .header__fixed ~ main {
-//     padding-top: 68px;
-//   }
-// }
-
-// @media screen and (min-width: 1360px) {
-//   .nav {
-//     padding: 13px 50px 0 42px;
-//   }
-
-//   .nav__item:not(:last-child) {
-//     margin-right: 38px;
-//   }
-// }

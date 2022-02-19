@@ -11,9 +11,7 @@
 
 .callback__title {
   margin-bottom: 34px;
-  font-weight: 300;
-  font-size: 38px;
-  line-height: 1.26;
+  @include mobSectionTitle;
 }
 
 .callback__form {

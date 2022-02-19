@@ -12,15 +12,12 @@
 
 .blog__date {
   margin-bottom: 5px;
-  font-size: 18px;
-  line-height: 1.66;
+  @include mobSectionBeforeTitle;
 }
 
 .blog__title {
   margin-bottom: 25px;
-  font-weight: 300;
-  font-size: 38px;
-  line-height: 1.26;
+  @include mobSectionTitle;
 }
 
 .blog__text {

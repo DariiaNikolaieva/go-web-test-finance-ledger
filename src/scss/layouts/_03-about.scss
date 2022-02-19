@@ -12,15 +12,12 @@
 
 .about__before_title {
   margin-bottom: 5px;
-  font-size: 18px;
-  line-height: 1.66;
+  @include mobSectionBeforeTitle;
 }
 
 .about__title {
   margin-bottom: 25px;
-  font-weight: 300;
-  font-size: 38px;
-  line-height: 1.26;
+  @include mobSectionTitle;
 }
 
 .about__text {
@@ -140,7 +137,7 @@
 
   .about__item_icon_circle {
     margin-bottom: 24px;
-    }
+  }
 
   .about__item_title {
     font-size: 20px;
@@ -170,7 +167,7 @@
   }
 
   .about__text_description {
-    width:100%;
+    width: 100%;
     margin-bottom: 17px;
   }
 }

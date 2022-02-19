@@ -1,0 +1,11 @@
+// mobile typography
+@mixin mobSectionTitle {
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 1.26;
+}
+
+@mixin mobSectionBeforeTitle {
+    font-size: 18px;
+    line-height: 1.66;
+}

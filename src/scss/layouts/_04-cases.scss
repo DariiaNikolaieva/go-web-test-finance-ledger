@@ -5,15 +5,12 @@
 
 .cases__before_title {
   margin-bottom: 15px;
-  font-size: 18px;
-  line-height: 1.66;
+  @include mobSectionBeforeTitle;
 }
 
 .cases__title {
   margin-bottom: 35px;
-  font-weight: 300;
-  font-size: 38px;
-  line-height: 1.26;
+  @include mobSectionTitle;
 }
 
 .cases__text {

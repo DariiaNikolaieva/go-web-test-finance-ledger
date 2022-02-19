@@ -10,15 +10,12 @@
 
 .team__before_title {
   margin-bottom: 15px;
-  font-size: 18px;
-  line-height: 1.66;
+  @include mobSectionBeforeTitle;
 }
 
 .team__title {
   margin-bottom: 35px;
-  font-weight: 300;
-  font-size: 38px;
-  line-height: 1.26;
+  @include mobSectionTitle;
 }
 
 .team__text {
