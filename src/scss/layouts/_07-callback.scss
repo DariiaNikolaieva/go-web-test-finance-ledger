@@ -37,7 +37,7 @@
     width: 384px;
     margin: 0;
   }
-  
+
   @media screen and (min-width: $desktop) {
     width: 680px;
   }
@@ -69,17 +69,36 @@
   background: getColor("main-bcg");
   border: 1px solid #f5f5f5;
   outline-color: getColor("accent-text");
+  // @include transition(all);
 
   &:first-child {
     margin-bottom: 36px;
+
+    &:hover ~ .callback__input_label:nth-child(3) {
+      top: -25px;
+    }
   }
 
   &:nth-child(2) {
     margin-bottom: 53px;
+    &:hover ~ .callback__input_label:nth-child(4) {
+      top: 50px;
+    }
+  }
+}
+
+.callback__input_label {
+  position: absolute;
+  left: 5px;
+  color: getColor("placeholder-text");
+  @include transition(all);
+
+  &:nth-child(3) {
+    top: 8px;
   }
 
-  &::placeholder {
-    color: getColor("placeholder-text");
+  &:nth-child(4) {
+    top: 84px;
   }
 }
 

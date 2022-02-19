@@ -17,19 +17,18 @@
   </picture>
   <div class="container">
     <h2 class="callback__title">Request Callback</h2>
-    <form name="callback" class="callback__form" data-netlify="true">
-      <input
-        class="callback__input_field"
-        type="text"
-        placeholder="Enter your name"
-        autocomplete="on"
-      />
-      <input
-        class="callback__input_field email"
-        type="email"
-        placeholder="Enter email*"
-        autocomplete="on"
-      />
+    <form
+      name="callback"
+      class="callback__form"
+      autocomplete="on"
+      data-netlify="true"
+    >
+      <input id="name" class="callback__input_field" type="text" />
+      <input id="email" class="callback__input_field email" type="email" />
+
+      <label for="name" class="callback__input_label name__lbl">Enter your name</label>
+      <label for="email" class="callback__input_label email__lbl">Enter email*</label>
+
       <div class="callback__warning">
         <svg class="callback__input_warning_icon" width="16" height="16">
           <use href="../images/content/symbol-defs.svg#warning"></use>
