@@ -1,16 +1,32 @@
 .cases {
   padding: 50px 0 46px 0;
   text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    padding: 48px 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 50px 0 47px 0;
+  }
 }
 
 .cases__before_title {
   margin-bottom: 15px;
   @include mobSectionBeforeTitle;
+
+  @media screen and (min-width: $tablet) {
+    @include tabSectionBeforeTitle;
+  }
 }
 
 .cases__title {
   margin-bottom: 35px;
   @include mobSectionTitle;
+
+  @media screen and (min-width: $tablet) {
+    @include tabSectionTitle;
+  }
 }
 
 .cases__text {
@@ -19,9 +35,20 @@
 
 .cases__list {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  row-gap: 7px;
+
+  @media screen and (min-width: $tablet) {
+    margin: 0 -2px;
+    flex-wrap: wrap;
+    height: 237px;
+    column-gap: 8px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    height: 435px;
+  }
 }
 
 .cases__item {
@@ -29,76 +56,21 @@
   width: 264px;
   @include transition(opacity);
 
-  &:not(:last-child) {
-    margin-bottom: 7px;
-  }
-
   &:hover,
   &:focus {
     opacity: 0.7;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 172px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 320px;
   }
 }
 
 .cases__item_img {
   width: 100%;
   height: auto;
-}
-
-@media screen and (min-width: 768px) {
-  .cases__container {
-    padding: 48px 28px;
-  }
-
-  .cases__title {
-    font-size: 20px;
-    line-height: 1.65;
-  }
-
-  .cases__text_description {
-    margin-bottom: 38px;
-    font-size: 18px;
-    line-height: 1.56;
-  }
-
-  .cases__list_img {
-    height: 237px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    row-gap: 7px;
-    column-gap: 8px;
-  }
-
-  .cases__item {
-    margin-bottom: 0;
-    width: 172px;
-  }
-}
-
-@media screen and (min-width: 1360px) {
-  .cases__container {
-    padding: 46px 28px 48px 28px;
-  }
-
-  .cases__title {
-    font-size: 20px;
-    line-height: 1.65;
-  }
-
-  .cases__text {
-    margin-bottom: 34px;
-  }
-
-  .cases__text_description {
-    margin-bottom: 39px;
-    font-size: 18px;
-  }
-
-  .cases__list_img {
-    height: 435px;
-  }
-
-  .cases__item {
-    width: 320px;
-  }
 }
