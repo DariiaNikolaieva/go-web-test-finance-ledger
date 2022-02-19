@@ -122,10 +122,10 @@
   width: 100vw;
 
   & ~ main {
-    padding-top: 103px;
+    padding-top: 97px;
   
     @media screen and (min-width: $tablet) {
-      padding-top: 68px;
+      padding-top: 55px;
     }
   }
 }
