@@ -26,30 +26,34 @@
         <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH +
         "/01-hero.html") %>
       </section>
+      <section class="benefits">
+        <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH +
+        "/02-benefits.html") %>
+      </section>
       <section class="about" id="about">
         <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH +
-        "/02-about.html") %>
+        "/03-about.html") %>
       </section>
       <section class="cases" id="cases">
         <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH +
-        "/03-cases.html") %>
+        "/04-cases.html") %>
       </section>
       <section class="blog" id="blog">
         <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH +
-        "/04-blog.html") %>
+        "/05-blog.html") %>
       </section>
       <section class="team" id="team">
         <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH +
-        "/05-team.html") %>
+        "/06-team.html") %>
       </section>
       <section class="callback" id="contacts">
         <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH +
-        "/06-callback.html") %>
+        "/07-callback.html") %>
       </section>
     </main>
     <footer class="footer">
       <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH +
-      "/07-footer.html") %>
+      "/08-footer.html") %>
     </footer>
   </body>
 </html>

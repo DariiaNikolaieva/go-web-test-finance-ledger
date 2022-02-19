@@ -1,15 +1,12 @@
 .callback {
+  padding-bottom: 30px;
   background-color: getColor("add-bcg");
 }
 
 .callback__img {
+  padding-bottom: 26px;
   width: 100vw;
-  height: 220px;
   object-fit: cover;
-}
-
-.callback__container {
-  padding: 26px 30px 30px 30px;
 }
 
 .callback__title {
@@ -25,26 +22,29 @@
 
 .callback__input_field {
   padding-left: 5px;
-  width: 260px;
+  width: 100%;
   height: 40px;
   box-sizing: border-box;
   color: getColor("dark-text");
-  font-family: "Open Sans";
-  font-weight: normal;
-  font-size: 16px;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
   line-height: 1.44;
   background: getColor("main-bcg");
   border: 1px solid #f5f5f5;
   outline-color: getColor("accent-text");
-}
 
-.callback__input_field.email {
-  margin-top: 36px;
-  margin-bottom: 53px;
-}
+  &:first-child {
+    margin-bottom: 36px;
+  }
 
-.callback__input_field::placeholder {
-  color: getColor("placeholder-text");
+  &:nth-child(2) {
+    margin-bottom: 53px;
+  }
+
+  &::placeholder {
+    color: getColor("placeholder-text");
+  }
 }
 
 .callback__warning {
@@ -60,29 +60,17 @@
   font-weight: normal;
 }
 
-.callback__input_warning_icon {
-  width: 16px;
-  height: 16px;
-}
-
 .callback__btn {
-  cursor: pointer;
-  width: 260px;
-  height: 42px;
-  font-family: inherit;
-  font-weight: normal;
-  font-size: 16px;
+  @extend %button;
+  width: 100%;
   line-height: 1.38;
-  color: getColor("white-text");
   background-color: getColor("main-accent-bcg");
   border-color: transparent;
-  border-radius: 5px;
-  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.callback__btn:hover,
-.callback__btn:focus {
-  opacity: 0.7;
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -137,7 +125,6 @@
     line-height: 1.28;
   }
 
-  
   .callback__input_field.email {
     margin-bottom: 60px;
   }

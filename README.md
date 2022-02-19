@@ -17,5 +17,8 @@
 * ***netlify build + form*** (16 minutes)
 * ***validate warning fix*** (42 minutes)
 
+## **Fix after review:**
+* ***fixing mobile styles*** (3 hours 22 minutes)
+
 Что не удалось:
 - найти все иконки в шрифте FontAwesome, поэтому иконка логотипа и 2 иконки из секции About свёрстаны, как svg;

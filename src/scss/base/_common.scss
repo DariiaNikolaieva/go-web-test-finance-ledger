@@ -1,24 +1,32 @@
-html {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-stretch: 100%;
-    color: getCOlor('dark-text');
-    border-color: getColor('main-bgc');
+body {
+  background-color: getColor("main-bcg");
+  color: getColor("dark-text");
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: 100%;
+  font-display: swap;
+  line-height: 1.6;
 }
 
 .container {
-    width: 320px;
-    margin: 0 auto;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.title__hidden {
+  @extend %title-hidden;
 }
 
 @media screen and (min-width: 768px) {
-    .container {
-        width: 768px;
-    }
+  .container {
+    width: 768px;
+  }
 }
 
 @media screen and (min-width: 1360px) {
-    .container {
-        width: 1360px;
-    }
+  .container {
+    width: 1360px;
+  }
 }

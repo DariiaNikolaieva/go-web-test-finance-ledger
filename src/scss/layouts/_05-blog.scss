@@ -1,21 +1,17 @@
 .blog {
+  padding-bottom: 30px;
   color: getColor("white-text");
   background-color: getColor("add-accent-bcg");
 }
 
-.blog__container {
-  padding: 30px;
-}
-
 .blog__img {
+  margin-bottom: 30px;
   width: 100vw;
-  height: 247px;
   object-fit: cover;
 }
 
 .blog__date {
   margin-bottom: 5px;
-  font-weight: normal;
   font-size: 18px;
   line-height: 1.66;
 }
@@ -29,30 +25,19 @@
 
 .blog__text {
   margin-bottom: 14px;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.60;
 }
 
 .blog__btn {
-  cursor: pointer;
-  width: 184px;
-  height: 47px;
-  font-family: inherit;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.6;
-  color: inherit;
+  @extend %button;
+  padding: 0 31px 0 41px;
   background-color: transparent;
   border: 1px solid #ffffff;
-  border-radius: 5px;
-  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.blog__btn:hover,
-.blog__btn:focus {
-  background-color: getColor("white-text");
-  color: getColor("add-accent-bcg");
+  &:hover,
+  &:focus {
+    background-color: getColor("white-text");
+    color: getColor("add-accent-bcg");
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -123,10 +108,10 @@
   }
 
   .blog__text {
-    width: 100%;  
+    width: 100%;
     margin-bottom: 17px;
     font-weight: normal;
     font-size: 18px;
-    line-height: 1.60;
+    line-height: 1.6;
   }
 }

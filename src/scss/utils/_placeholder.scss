@@ -1,0 +1,17 @@
+%button {
+    cursor: pointer;
+    height: 45px;
+    color: getColor("white-text");
+    font-family: inherit;
+    font-size: inherit;
+    border-radius: 5px;
+    @include transition(all);
+}
+
+%title-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }

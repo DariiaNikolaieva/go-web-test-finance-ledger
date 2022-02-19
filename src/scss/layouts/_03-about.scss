@@ -1,124 +1,43 @@
-.about {
-  padding-top: 30px;
-  margin: 0 auto;
-}
-
-.about__list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.about__item {
-  width: 220px;
-  margin-bottom: 18px;
-  text-align: center;
-}
-
-.about__item:last-child {
-  margin-bottom: 31px;
-}
-
-.fa-circle {
-  color: getColor("accent-text");
-}
-
-.fa-book-open-reader,
-.fa-pencil {
-  color: getColor("white-text");
-}
-
-.about__item_icon_circle {
-margin: 0 auto 11px auto;
-  width: 64px;
-  height: 64px;
-  background-color: getColor("accent-text");
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about__item_icon_svg {
-  width: 32px;
-  height: 32px;
-  fill: getColor("white-text");
-}
-
-.about__item_icon {
-  margin-bottom: 11px;
-}
-
-.about__item_title {
-  margin-bottom: 15px;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.66;
-}
-
-.about__item_text {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
 .about__img {
+  margin-bottom: 30px;
   width: 100vw;
-  height: 220px;
   object-fit: cover;
 }
 
-.about__provision_container_bgc {
-  width: 100vw;
+.about {
+  padding-bottom: 30px;
+  color: getColor("white-text");
   background-color: getColor("main-accent-bcg");
 }
 
-.about__provision_container {
-  padding: 30px;
-  color: getColor("white-text");
-}
-
-.about__title {
+.about__before_title {
   margin-bottom: 5px;
-  font-weight: normal;
   font-size: 18px;
   line-height: 1.66;
 }
 
-.about__text {
+.about__title {
   margin-bottom: 25px;
   font-weight: 300;
   font-size: 38px;
   line-height: 1.26;
 }
 
-.about__text_description {
+.about__text {
   margin-bottom: 14px;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.6;
 }
 
 .about__btn {
-  cursor: pointer;
-  width: 158px;
-  height: 47px;
-  color: inherit;
-  font-family: inherit;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.6;
+  padding: 0 31px 0 41px;
+  @extend %button;
   background-color: transparent;
   border: 1px solid #ffffff;
-  border-radius: 5px;
-    transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.about__btn:hover,
-.about__btn:focus {
-  background-color: getColor("white-text");
-  color: getColor("main-accent-bcg");
+  &:hover,
+  &:focus {
+    color: getColor("main-accent-bcg");
+    background-color: getColor("white-text");
+  }
 }
 
 @media screen and (min-width: 768px) {
