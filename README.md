@@ -19,6 +19,7 @@
 
 ## **Fix after review:**
 * ***fixing mobile styles*** (3 hours 22 minutes)
+* ***fixing tablet & desktop styles & add placeholder up in callback form*** (4 hours 34 minutes)
 
 Что не удалось:
 - найти все иконки в шрифте FontAwesome, поэтому иконка логотипа и 2 иконки из секции About свёрстаны, как svg;
