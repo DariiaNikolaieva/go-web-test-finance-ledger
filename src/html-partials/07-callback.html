@@ -1,40 +1,42 @@
-<picture>
-  <source
-    srcset="
-      images/content/home/contact.webp    1x,
-      images/content/home/contact@2x.webp 2x
-    "
-    type="image/webp"
-  />
-  <source srcset="images/content/home/contact@2x.jpg 2x" type="image/jpg" />
-  <img
-    class="callback__img"
-    src="images/content/home/contact.jpg"
-    alt="A man looking at his laptop with smartphone in his hand"
-    height="220"
-  />
-</picture>
-<div class="container">
-  <h2 class="callback__title">Request Callback</h2>
-  <form name="callback" class="callback__form" data-netlify="true">
-    <input
-      class="callback__input_field"
-      type="text"
-      placeholder="Enter your name"
-      autocomplete="on"
+<div class="callback__container">
+  <picture>
+    <source
+      srcset="
+        images/content/home/contact.webp    1x,
+        images/content/home/contact@2x.webp 2x
+      "
+      type="image/webp"
     />
-    <input
-      class="callback__input_field email"
-      type="email"
-      placeholder="Enter email*"
-      autocomplete="on"
+    <source srcset="images/content/home/contact@2x.jpg 2x" type="image/jpg" />
+    <img
+      class="callback__img"
+      src="images/content/home/contact.jpg"
+      alt="A man looking at his laptop with smartphone in his hand"
+      height="220"
     />
-    <div class="callback__warning">
-      <svg class="callback__input_warning_icon" width="16" height="16">
-        <use href="../images/content/symbol-defs.svg#warning"></use>
-      </svg>
-      <p class="callback__input_warning">This is a required field</p>
-    </div>
-    <button type="submit" class="callback__btn">Send</button>
-  </form>
+  </picture>
+  <div class="container">
+    <h2 class="callback__title">Request Callback</h2>
+    <form name="callback" class="callback__form" data-netlify="true">
+      <input
+        class="callback__input_field"
+        type="text"
+        placeholder="Enter your name"
+        autocomplete="on"
+      />
+      <input
+        class="callback__input_field email"
+        type="email"
+        placeholder="Enter email*"
+        autocomplete="on"
+      />
+      <div class="callback__warning">
+        <svg class="callback__input_warning_icon" width="16" height="16">
+          <use href="../images/content/symbol-defs.svg#warning"></use>
+        </svg>
+        <p class="callback__input_warning">This is a required field</p>
+      </div>
+      <button type="submit" class="callback__btn">Send</button>
+    </form>
+  </div>
 </div>
